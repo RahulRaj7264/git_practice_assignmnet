@@ -1,16 +1,7 @@
-let number = 5 ;
-
-let count = 0;
-
-for(let i = 1;i<=number;i++){
-    if(number %i ==0){
-        count++;
-
-    }
+let check_prime = (num)=>{
+    let count = 0;
+    for(let i=1; i<=num; i++) count++;
+    if(count==2) return "Prime";
+    else return "Not Prime";
 }
-if(count==2){
-           console.log("prime ");
-}
-else{
-    console.log("Not Prime ")
-}
+console.log(check_prime(5));
